@@ -3,7 +3,7 @@ document.querySelector("button").addEventListener("mousedown", getFetch);
 
 function getFetch() {
   const choice = document.querySelector("input").value;
-  const url = `https://api.nasa.gov/planetary/apod?api_key=GVrnwckJhfSVKPGDAPCj8mLg8vfh5s0f2f3JNoFu&date=${choice}`;
+  const url = `https://api.nasa.gov/planetary/apod&date=${choice}`;
 
   fetch(url)
     .then((res) => res.json())
